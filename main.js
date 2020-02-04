@@ -27,9 +27,7 @@ for (customer of customers) {
   let dobBlock = document.createElement("p");
   dobBlock.innerHTML = dobFormat;
   customerDesc.appendChild(dobBlock);
-  let stateBlock = document.createElement("p");
+  let stateBlock = document.createElement("span");
   stateBlock.innerHTML = nameToAbbr(customer.location.state);
   customerLocation.appendChild(stateBlock);
 }
-
-console.log(customers[0].location.state);
