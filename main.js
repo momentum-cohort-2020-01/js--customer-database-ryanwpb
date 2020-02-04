@@ -13,6 +13,10 @@ for (customer of customers) {
   customerName.classList.add("customer-name");
   customerDesc.appendChild(customerName);
   customerName.innerHTML = customer.name.first + " " + customer.name.last;
+  let customerEmail = document.createElement("p");
+  customerEmail.classList.add("email");
+  customerEmail.innerHTML = customer.email;
+  customerDesc.appendChild(customerEmail);
 }
 
 console.log(customers);

@@ -6,6 +6,7 @@
 
 body {
   font-family: "Oswald", sans-serif;
+  color: #213260;
 }
 
 .row {
@@ -27,6 +28,11 @@ body {
   overflow: hidden;
   height: 125px;
   display: flex;
+  transition: all 0.3s;
+}
+
+.customer-block:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .customer-block img {
@@ -40,4 +46,8 @@ body {
 .customer-name {
   text-transform: capitalize;
   letter-spacing: 1px;
+}
+
+p.email {
+  font-size: 12px;
 }
