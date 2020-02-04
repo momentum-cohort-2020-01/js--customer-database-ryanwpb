@@ -17,6 +17,15 @@ for (customer of customers) {
   customerEmail.classList.add("email");
   customerEmail.innerHTML = customer.email;
   customerDesc.appendChild(customerEmail);
+  let customerLocation = document.createElement("p");
+  customerLocation.classList.add("location");
+  customerLocation.innerHTML =
+    customer.location.street +
+    " " +
+    customer.location.city +
+    " " +
+    customer.location.state;
+  customerDesc.appendChild(customerLocation);
 }
 
-console.log(customers);
+console.log(usStates);
