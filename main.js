@@ -12,7 +12,7 @@ for (customer of customers) {
   let customerName = document.createElement("div");
   customerName.classList.add("customer-name");
   customerDesc.appendChild(customerName);
-  customerName.innerHTML = customer.name.first;
+  customerName.innerHTML = customer.name.first + " " + customer.name.last;
 }
 
 console.log(customers);
