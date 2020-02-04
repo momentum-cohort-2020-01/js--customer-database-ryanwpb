@@ -1,11 +1,18 @@
 let row = document.querySelector(".row");
 for (customer of customers) {
   let parent = document.createElement("div");
+  let customerDesc = document.createElement("div");
+  customerDesc.classList.add("customer-desc");
   row.appendChild(parent);
   let cusImg = document.createElement("img");
-  console.log(cusImg);
   cusImg.src = customer.picture.large;
   parent.classList.add("customer-block");
-  console.log(cusImg);
   parent.appendChild(cusImg);
+  parent.appendChild(customerDesc);
+  let customerName = document.createElement("div");
+  customerName.classList.add("customer-name");
+  customerDesc.appendChild(customerName);
+  customerName.innerHTML = customer.name.first;
 }
+
+console.log(customers);

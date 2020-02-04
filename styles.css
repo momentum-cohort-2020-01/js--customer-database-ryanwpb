@@ -26,8 +26,18 @@ body {
   border-radius: 0.25rem;
   overflow: hidden;
   height: 125px;
+  display: flex;
 }
 
 .customer-block img {
   width: 30%;
+}
+
+.customer-desc {
+  padding: 1rem;
+}
+
+.customer-name {
+  text-transform: capitalize;
+  letter-spacing: 1px;
 }
