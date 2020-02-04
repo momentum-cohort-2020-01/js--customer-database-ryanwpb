@@ -20,12 +20,16 @@ for (customer of customers) {
   let customerLocation = document.createElement("p");
   customerLocation.classList.add("location");
   customerLocation.innerHTML =
-    customer.location.street +
-    " " +
-    customer.location.city +
-    " " +
-    customer.location.state;
+    customer.location.street + " " + customer.location.city;
   customerDesc.appendChild(customerLocation);
+  let dob = customer.dob;
+  let dobFormat = "DOB " + moment(dob).format("MMMM Do YYYY");
+  let dobBlock = document.createElement("p");
+  dobBlock.innerHTML = dobFormat;
+  customerDesc.appendChild(dobBlock);
+  let stateBlock = document.createElement("p");
+  stateBlock.innerHTML = nameToAbbr(customer.location.state);
+  customerLocation.appendChild(stateBlock);
 }
-console.log(customers);
-console.log(usStates);
+
+console.log(customers[0].location.state);
