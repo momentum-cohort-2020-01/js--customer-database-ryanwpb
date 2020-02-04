@@ -7,3 +7,27 @@
 body {
   font-family: "Oswald", sans-serif;
 }
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5rem 1rem;
+}
+
+.customer-block {
+  width: 30%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+  margin: 1rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  height: 125px;
+}
+
+.customer-block img {
+  width: 30%;
+}
