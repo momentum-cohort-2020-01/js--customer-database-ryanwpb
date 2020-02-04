@@ -9,6 +9,12 @@ body {
   color: #213260;
 }
 
+h1 {
+  padding: 2rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
 .row {
   display: flex;
   justify-content: space-around;
@@ -46,6 +52,7 @@ body {
 .customer-name {
   text-transform: capitalize;
   letter-spacing: 1px;
+  font-size: 20px;
 }
 
 p.email {
