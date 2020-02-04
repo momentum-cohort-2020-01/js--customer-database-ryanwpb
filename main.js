@@ -27,5 +27,5 @@ for (customer of customers) {
     customer.location.state;
   customerDesc.appendChild(customerLocation);
 }
-
+console.log(customers);
 console.log(usStates);
