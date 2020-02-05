@@ -23,7 +23,7 @@ for (customer of customers) {
     customer.location.street + " " + customer.location.city;
   customerDesc.appendChild(customerLocation);
   let dob = customer.dob;
-  let dobFormat = "DOB " + moment(dob).format("MMMM Do YYYY");
+  let dobFormat = "DOB: " + moment(dob).format("MMMM Do YYYY");
   let dobBlock = document.createElement("p");
   dobBlock.innerHTML = dobFormat;
   customerDesc.appendChild(dobBlock);
