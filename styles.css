@@ -27,7 +27,7 @@ h1 {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin: 2rem 1rem;
+  margin: 0 1rem;
 }
 
 .customer-block {
