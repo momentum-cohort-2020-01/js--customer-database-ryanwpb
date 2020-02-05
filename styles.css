@@ -55,6 +55,13 @@ h1 {
   letter-spacing: 1px;
   width: 70%;
   position: relative;
+  background: linear-gradient(
+    77deg,
+    rgba(34, 129, 195, 1) 0%,
+    rgba(253, 45, 101, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .customer-name {
@@ -81,15 +88,20 @@ span::before {
 
 p.since {
   font-size: 10px;
-  background: #5eda9b;
   display: block;
   width: auto;
   position: absolute;
   right: 15px;
   top: 20px;
-  padding: 5px;
   border-radius: 0.25rem;
   text-transform: capitalize;
+  background: linear-gradient(
+    77deg,
+    rgba(34, 129, 195, 1) 0%,
+    rgba(253, 45, 101, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -103,3 +115,6 @@ p.since {
     width: 100%;
   }
 }
+
+/* background: rgb(34,129,195);
+background: linear-gradient(77deg, rgba(34,129,195,1) 0%, rgba(253,45,101,1) 100%); */
