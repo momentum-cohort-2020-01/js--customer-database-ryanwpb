@@ -53,6 +53,8 @@ h1 {
   justify-content: center;
   font-size: 15px;
   letter-spacing: 1px;
+  width: 70%;
+  position: relative;
 }
 
 .customer-name {
@@ -75,6 +77,19 @@ span::before {
   content: ",";
   position: relative;
   right: 4px;
+}
+
+p.since {
+  font-size: 10px;
+  background: #f0a2b8;
+  display: block;
+  width: auto;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  padding: 5px;
+  border-radius: 0.25rem;
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 767px) {

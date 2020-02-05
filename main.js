@@ -30,4 +30,10 @@ for (customer of customers) {
   let stateBlock = document.createElement("span");
   stateBlock.innerHTML = nameToAbbr(customer.location.state);
   customerLocation.appendChild(stateBlock);
+  let custSince = document.createElement("p");
+  let registered = customer.registered;
+  let sinceFormat = moment(registered).format("YYYY");
+  custSince.classList.add("since");
+  customerDesc.appendChild(custSince);
+  custSince.innerHTML = "since " + sinceFormat;
 }
