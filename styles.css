@@ -27,7 +27,7 @@ h1 {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin: 5rem 1rem;
+  margin: 2rem 1rem;
 }
 
 .customer-block {
@@ -123,5 +123,9 @@ p.since {
   }
 }
 
-/* background: rgb(34,129,195);
-background: linear-gradient(77deg, rgba(34,129,195,1) 0%, rgba(253,45,101,1) 100%); */
+background: rgb(34, 91, 195);
+background: linear-gradient(
+  77deg,
+  rgba(34, 91, 195, 1) 11%,
+  rgba(253, 45, 101, 1) 100%
+);

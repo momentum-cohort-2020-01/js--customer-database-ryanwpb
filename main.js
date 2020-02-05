@@ -31,6 +31,9 @@ for (customer of customers) {
   customerLocation.innerHTML =
     customer.location.street + " " + customer.location.city;
   customerDesc.appendChild(customerLocation);
+  let stateBlock = document.createElement("span");
+  stateBlock.innerHTML = nameToAbbr(customer.location.state);
+  customerLocation.appendChild(stateBlock);
 
   //Customer Date of Birth
   let dob = customer.dob;
@@ -38,11 +41,6 @@ for (customer of customers) {
   let dobBlock = document.createElement("p");
   dobBlock.innerHTML = dobFormat;
   customerDesc.appendChild(dobBlock);
-
-  //Customer Location
-  let stateBlock = document.createElement("span");
-  stateBlock.innerHTML = nameToAbbr(customer.location.state);
-  customerLocation.appendChild(stateBlock);
 
   //Customer Registered Year
   let custSince = document.createElement("p");
