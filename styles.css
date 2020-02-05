@@ -50,7 +50,7 @@ h1 {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 15px;
   letter-spacing: 1px;
   width: 70%;
