@@ -92,7 +92,13 @@ p.since {
   text-transform: capitalize;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
+  .customer-block {
+    width: 46%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
   .customer-block {
     width: 100%;
   }
